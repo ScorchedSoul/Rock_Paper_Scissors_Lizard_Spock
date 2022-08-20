@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: Lato, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url('https://media.istockphoto.com/photos/radial-background-of-halftones-and-highspeed-abstract-lines-for-anime-picture-id1028900996?k=20&m=1028900996&s=612x612&w=0&h=_KYjwCM8BXAeeZ1IeiyaGrrtdccCRVMD-oB6krfvC0M=');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container
+{
+  background: white;
+  box-sizing: border-box;
+
+  border-radius: 2px;
+
+  box-shadow: 3px 3px 14px black;
+
+  padding: 10px;
+}
+
+
+.header {
+  background: dodgerblue;
+  margin: 10px;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid rgb(55, 54, 54);
+  border-right: 1px solid rgb(47, 47, 47);
+
+  box-shadow: 2px 2px 4px black;
+
+  border-radius: 2px;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.player-container {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.far {
+  font-size: 50px;
+  margin-right: 40px;
+  User-select: none;
+}
+
+#player .far , #player .choice
+{
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+#computer .far, #computer .choice
+{
+  color: red;
+}
+
+#player .far:last-of-type ,
+#computer .far:last-of-type 
+{
+  margin-right:0;
+}
+
+.selected 
+{
+  color: black !important;
+}
+
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+
+    width: 90%;
+    height: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .far {
+    font-size: 2rem;
+  }
+
+  .reset-icon {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 470px) {
+  .game-container {
+    height: 80%;
+    width: 90%;
+
+    
+  }
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  .far {
+    font-size: 1.3rem;
+    margin: 10px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+    font-size: 1.5rem;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+
+  .result-text
+  {
+
+    font-size: 2rem;
+  }
+}
