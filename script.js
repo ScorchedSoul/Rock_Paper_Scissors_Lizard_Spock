@@ -236,10 +236,13 @@ function displayComputerChoice()
 
 // check result , increase scores , update resultText
 function updateScore(playerChoice)
+
 {
   if (playerChoice === computerChoice)
   {
     resultText.textContent = "It's a tie!";
+    resultText.classList.add('result-l');
+    resultText.classList.remove('result-f');
   }
   else
   {
@@ -251,12 +254,16 @@ function updateScore(playerChoice)
       resultText.textContent = "You Won!";
       playerScoreNumber++;
       playerScoreEl.textContent = playerScoreNumber;
+      resultText.classList.add('result-f');
+
     }
     else
     {
       resultText.textContent = "You Lost!";
       computerScoreNumber++;
       computerScoreEl.textContent = computerScoreNumber;
+      resultText.classList.add('result-l');
+      resultText.classList.remove('result-f');
     }
   }
 }

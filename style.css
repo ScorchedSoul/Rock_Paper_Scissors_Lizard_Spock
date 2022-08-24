@@ -34,6 +34,8 @@ body {
   box-shadow: 3px 3px 14px black;
 
   padding: 10px;
+
+  overflow: hidden;
 }
 
 
@@ -81,7 +83,7 @@ h2 {
 
 #computer .far, #computer .choice
 {
-  color: red;
+  color: rgb(0, 0, 0);
 }
 
 #player .far:last-of-type ,
@@ -92,7 +94,10 @@ h2 {
 
 .selected 
 {
-  color: black !important;
+  color: #E6B325 !important;
+  
+
+  font-size: 4.5rem;
 }
 
 .reset-icon {
@@ -105,13 +110,65 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  overflow: hidden;
 }
 
 .result-text {
-  font-size: 40px;
+  font-size: 3.1rem;
   margin: unset;
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-bottom: 40px;
 }
+
+  /* setting style for result text */
+
+  .green
+  {
+    color: rgb(9, 255, 0);
+  }
+  .red
+  {
+    color: red;
+  }
+
+  .result-l
+  {
+    color: red;
+  }
+
+  .result-f
+  {
+    animation: result-final 3s infinite;
+    padding-bottom: 10px;
+  }
+
+  @keyframes result-final
+  {
+    0%
+    {
+      color:rgb(238, 33, 33);
+    }
+    25%
+    {
+      color:rgb(243, 101, 18);
+    }
+    50%
+    {
+      color:rgb(101, 193, 58);
+    }
+    75%
+    {
+      color:rgb(82, 205, 246);
+      font-size: 4.2rem;
+    }
+    100%
+    {
+      color:rgb(149, 27, 243);
+    }
+  }
+
+
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
@@ -137,6 +194,7 @@ h2 {
     margin-top: 2rem;
     margin-left: 2rem;
   }
+
 }
 
 /* Media Query: iPhone (Vertical) */
