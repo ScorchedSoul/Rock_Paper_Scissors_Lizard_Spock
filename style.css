@@ -115,7 +115,7 @@ h2 {
 }
 
 .result-text {
-  font-size: 3.1rem;
+  font-size: 2.6rem;
   margin: unset;
   margin-top: 0px;
   padding-bottom: 40px;
@@ -160,7 +160,7 @@ h2 {
     75%
     {
       color:rgb(82, 205, 246);
-      font-size: 4.2rem;
+      font-size: 3.3rem;
     }
     100%
     {
@@ -227,6 +227,38 @@ h2 {
   .result-text
   {
 
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
+
+
+  .result-f
+  {
+    animation: result-final 3s infinite;
+    padding-bottom: 10px;
+  }
+
+  @keyframes result-final
+  {
+    0%
+    {
+      color:rgb(238, 33, 33);
+    }
+    25%
+    {
+      color:rgb(243, 101, 18);
+    }
+    50%
+    {
+      color:rgb(101, 193, 58);
+    }
+    75%
+    {
+      color:rgb(82, 205, 246);
+      font-size: 2.5rem;
+    }
+    100%
+    {
+      color:rgb(149, 27, 243);
+    }
+}
 }
